@@ -1,0 +1,28 @@
+{
+  "name": "movie-ticket-booking-system",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-partials": "^0.3.0",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.6.1",
+    "formidable": "^1.2.2",
+    "http": "0.0.1-security",
+    "http-server": "^0.12.3",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.6",
+    "nodemon": "^2.0.4",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start nodemon server.js && start  http://localhost:8080"
+  },
+  "author": "Komarti Venkata Teja",
+  "license": "ISC",
+  "description": "this is based on nodejs and mongo db"
+}

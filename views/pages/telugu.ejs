@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css">
+        <script type="text/javascript" src="bootstrap-3.3.7-dist/js/jquery.js"></script>
+        <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="index2.css">
+        <style>
+            body{
+                 background: url("img/webpic4.jpg");
+                 background-size: cover;
+                 }
+            img{
+                width: auto;
+                height: 400px;
+            }
+            h3{
+                color: yellow;
+            }
+            .bt1{
+                margin-left: -3px;
+            }
+           
+        </style>
+    </head>
+
+    <body>
+        <%- include('../partials/header'); %>
+        <br><br><br>
+        <div class="container" id="content">
+        
+            <div>
+                <h1 style="color: white;">Category:  Telugu  </h1>
+            </div>
+            <hr>
+
+            <div class="row text-center" id="cameras">
+                <div class="col-md-4 col-sm-6 ">
+                    
+                        <img src="img/2.jpg" alt="">
+                        <div class="caption">
+                            <h3>That is MahaLaxmi </h3>
+                         <%
+                             if (sess.email) 
+                                { %>
+                                         <p><a href="/book/2" role="button" class="btn btn-primary bt1">Book Now</a></p>
+                                  <%
+                                 }
+                             else 
+
+                             {
+                                %>
+                                       <a href="/login" name="add" value="add" class="btn btn-primary bt1">Book Now</a>
+                                <%
+                                
+                             }
+                         %>
+                                
+                        </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    
+                        <img src="img/3.jpg" alt="">
+                        <div class="caption">
+                            <h3>Majili </h3>
+                        <%
+                             if (sess.email) 
+                                { %>
+                                         <p><a href="/book/3" role="button" class="btn btn-primary bt1">Book Now</a></p>
+                                  <%
+                                 }
+                             else 
+
+                             {
+                                %>
+                                       <a href="/login" name="add" value="add" class="btn btn-primary bt1">Book Now</a>
+                                <%
+                                
+                             }
+                         %>
+                        </div>
+                    
+                </div>
+
+                <div class="col-md-4 col-sm-6 ">
+                    
+                        <img src="img/4.jpg" alt="">
+                        <div class="caption">
+                            <h3>Suryakantham </h3>
+                        <%
+                             if (sess.email) 
+                                { %>
+                                         <p><a href="/book/4" role="button" class="btn btn-primary bt1">Book Now</a></p>
+                                  <%
+                                 }
+                             else 
+
+                             {
+                                %>
+                                       <a href="/login" name="add" value="add" class="btn btn-primary bt1">Book Now</a>
+                                <%
+                                
+                             }
+                         %>
+                        </div>
+                    
+                </div>
+            </div>
+            
+            
+            <br><br>
+            <div class="row text-center" id="cameras">
+                <div class="col-md-4 col-sm-6 home-feature">
+                    
+                        <img src="img/5.jpg" alt="">
+                        <div class="caption">
+                            <h3>Geetha govindham </h3>
+                        <%
+                             if (sess.email) 
+                                { %>
+                                         <p><a href="/book/5" role="button" class="btn btn-primary bt1">Book Now</a></p>
+                                  <%
+                                 }
+                             else 
+
+                             {
+                                %>
+                                       <a href="/login" name="add" value="add" class="btn btn-primary bt1">Book Now</a>
+                                <%
+                                
+                             }
+                         %>
+                        </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 home-feature">
+                    
+                        <img src="img/6.jpg" alt="">
+                        <div class="caption">
+                            <h3>Tholiprema </h3>
+                        <%
+                             if (sess.email) 
+                                { %>
+                                         <p><a href="/book/6" role="button" class="btn btn-primary bt1">Book Now</a></p>
+                                  <%
+                                 }
+                             else 
+
+                             {
+                                %>
+                                       <a href="/login" name="add" value="add" class="btn btn-primary bt1">Book Now</a>
+                                <%
+                                
+                             }
+                         %>
+                        </div>
+                    
+                </div>
+
+                <div class="col-md-4 col-sm-6 home-feature">
+                    
+                        <img src="img/7.jpg" alt="">
+                        <div class="caption">
+                            <h3> GangLeader </h3>
+                        <%
+                             if (sess.email) 
+                                { %>
+                                         <p><a href="/book/7" role="button" class="btn btn-primary bt1">Book Now</a></p>
+                                  <%
+                                 }
+                             else 
+
+                             {
+                                %>
+                                       <a href="/login" name="add" value="add" class="btn btn-primary bt1">Book Now</a>
+                                <%
+                                
+                             }
+                         %>
+                        </div>
+                    
+                </div>
+            </div>
+            
+            
+             <br><br>
+            <div class="row text-center" id="cameras">
+                <div class="col-md-4 col-sm-6 home-feature">
+                    
+                        <img src="img/8.jpg" alt="">
+                        <div class="caption">
+                            <h3>Syeraa </h3>
+                        <%
+                             if (sess.email) 
+                                { %>
+                                         <p><a href="/book/8" role="button" class="btn btn-primary bt1">Book Now</a></p>
+                                  <%
+                                 }
+                             else 
+
+                             {
+                                %>
+                                       <a href="/login" name="add" value="add" class="btn btn-primary bt1">Book Now</a>
+                                <%
+                                
+                             }
+                         %>
+                        </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 home-feature">
+                    
+                        <img src="img/9.jpg" alt="">
+                        <div class="caption">
+                            <h3>Chanakya </h3>
+                        <%
+                             if (sess.email) 
+                                { %>
+                                         <p><a href="/book/9" role="button" class="btn btn-primary bt1">Book Now</a></p>
+                                  <%
+                                 }
+                             else 
+
+                             {
+                                %>
+                                       <a href="/login" name="add" value="add" class="btn btn-primary bt1">Book Now</a>
+                                <%
+                                
+                             }
+                         %>
+                        </div>
+                    
+                </div>
+
+                <div class="col-md-4 col-sm-6 home-feature">
+                    
+                        <img src="img/10.jpg" alt="">
+                        <div class="caption">
+                            <h3>Saaho </h3>
+                        <%
+                             if (sess.email) 
+                                { %>
+                                         <p><a href="/book/10" role="button" class="btn btn-primary bt1">Book Now</a></p>
+                                  <%
+                                 }
+                             else 
+
+                             {
+                                %>
+                                       <a href="/login" name="add" value="add" class="btn btn-primary bt1">Book Now</a>
+                                <%
+                                
+                             }
+                         %>
+                        </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+              
+    </div>
+            
+
+       <br><br>
+          <%- include('../partials/footer'); %>
+    
+    </body>
+
+</html>

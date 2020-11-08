@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Settings</title>
+       <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css">
+        <script type="text/javascript" src="bootstrap-3.3.7-dist/js/jquery.js"></script>
+        <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <style>
+            body{
+                background: url(img/settings.jpg);
+                height: 100%;
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover; 
+            }
+            label{
+                color: yellowgreen;
+                font-size: 20px;
+            }
+
+             input{
+                margin-top: 40px!important;
+             }
+            
+            
+
+           
+           .c1{
+            float: left;
+            margin-left: 2%;
+              background-color: rgba(55,55,55,0.5);
+            height:  500px;
+            width: 30%
+          
+           }
+            
+           .btn{
+                width: 200px;
+                margin-left: 15%; 
+                border-radius: 20px;
+            }
+             
+             form .btn:hover{
+                background-color: green;
+             }
+
+            .msg{
+                    color: white;
+                    
+                    font-size: 18px;
+                }
+            
+        </style>
+    </head>
+    <body>
+        <br><br><br><br>
+       <%- include('../partials/header'); %>
+       
+
+         <div class="c1">
+            <div class="container-fluid" id="content">
+            <div class="row">
+             <div class="col-lg-9 col-lg-offset-1" id="settings-container">
+                <br><br>
+                    <label>change name</label>
+                    <br>
+                    <form action="/settings_script" method="POST">
+                    <div class="form-group">
+                                <input type="text" class="form-control"  placeholder="enter first name" size="40"  name="fname" required = "true">
+                            </div>
+                        <div class="form-group">
+                                <input type="text" class="form-control"  placeholder="enter last name"  size="40"  name="lname" required = "true">
+                            </div>
+                            <br><br><br><br><br><br>
+                        <button type="submit" class="btn btn-primary">Change</button>
+                        
+                    </form>
+                </div>
+         </div>
+     </div>
+ </div>
+
+         <div class="c1">
+             <div class="container-fluid" id="content">
+            <div class="row">
+             <div class="col-lg-9 col-lg-offset-1" id="settings-container">
+                <br><br>
+                    <label>Change Password</label>
+                    <br>
+                    <span class="msg"><%= typeof msg2 != 'undefined' ? msg2: '' %></span>
+                
+                    <form action="/settings_script" method="POST">
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="pass1" size="40"  placeholder="Old Password" required = "true">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="pass2" size="40" placeholder="New Password" required = "true">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="pass3" size="40" placeholder="Re-type New Password" required = "true">
+                        </div><br><br>
+                        <button type="submit" class="btn btn-primary">Change</button>
+                         <br>
+                        
+                       
+                    </form>
+                </div>
+         </div>
+     </div>
+         </div>
+
+
+         <div class="c1">
+             <div class="container-fluid" id="content">
+            <div class="row">
+             <div class="col-lg-9 col-lg-offset-1" id="settings-container">
+                <br><br>
+                    <label>Change Phone number</label>
+                    <br>
+                    <span class="msg"><%= typeof msg3 != 'undefined' ? msg3: '' %></span>
+                    <form action="/settings_script" method="POST">
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="phone" size="40" placeholder="new phone number" required = "true">
+                        </div>
+                        <br><br><br><br><br><br><br><br><br>
+                        <button type="submit" class="btn btn-primary">Change</button>
+                    </form>
+                </div>
+         </div>
+     </div>
+         </div>
+
+
+
+
+
+
+        <div class="navbar-fixed-bottom">
+        <%- include('../partials/footer'); %>
+        </div>
+    </body>
+</html>
